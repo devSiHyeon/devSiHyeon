@@ -4,10 +4,10 @@
 
 
 ###  🌱skil <br>
-####  > JAVA, JSP, JQuery <br>
-####  HTML5, CSS3, JS, Boot strap <br>
-####  My-SQL <br>
-####  깃허브 <br>
+##  > JAVA, JSP, JQuery <br>
+##  > HTML5, CSS3, JS, Boot strap <br>
+##  > My-SQL <br>
+##  > GitHub <br>
 
 
 ###  🌱project <br>
