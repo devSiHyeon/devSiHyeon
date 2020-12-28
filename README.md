@@ -4,10 +4,10 @@
 
 
 🌱skil <br>
-  > Launage -JAVA, JS, Boot strap <br>
-  > HTML5, CSS3, JS, JQuery <br>
-  Data Base : My SQL <br>
-  Etc : 깃허브 <br>
+  > JAVA, JS, Boot strap <br>
+  HTML5, CSS3, JS, JQuery <br>
+  My SQL <br>
+  깃허브 <br>
 
 
 🌱project <br>
