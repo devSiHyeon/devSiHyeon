@@ -1,13 +1,13 @@
 ### Si Hyeon  🌱 
 
-Email : s.hyeon.dev@gmail.com
+  > Email : s.hyeon.dev@gmail.com
 
 
 🌱skil <br>
   > Launage -JAVA, JS, Boot strap <br>
   > HTML5, CSS3, JS, JQuery <br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  * Data Base : My SQL <br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  * Etc : 깃허브 <br>
+  Data Base : My SQL <br>
+  Etc : 깃허브 <br>
 
 
 🌱project <br>
