@@ -3,20 +3,19 @@
 Email : s.hyeon.dev@gmail.com
 
 
--skil <br>
+🌱skil <br>
   : Launage -JAVA, JS, Boot strap
 
-- Web skils <br>
+🌱 Web skils <br>
   : HTML5, CSS3, JS, JQuery
 
--Data Base <br>
+🌱Data Base <br>
   : My SQL
   
--Etc <br>
+🌱Etc <br>
   : 깃허브
 
-
-- project <br>
+🌱project <br>
  
 SHINNA HOTEL
 기간 : 2020.12.01. ~ 진행중
