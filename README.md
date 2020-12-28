@@ -18,7 +18,7 @@ Email : s.hyeon.dev@gmail.com
 🌱project <br>
 
 
-|SHINNA HOTEL|
+|Project|SHINNA HOTEL|
 |--|--|
 |<img src="https://github.com/sihyeon01/sihyeon01/issues/1#issue-775377584">)||기간 : 2020.12.01. ~ 진행중<br>
 팀원 : 3명<br>
