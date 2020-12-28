@@ -69,11 +69,12 @@ body{
 					</li>
 					<li class="menu"><a href="#">부대시설</a>
 						<ul class="sub">
+							<li><a href="fa_ca.do">카페</a></li>
 							<li><a href="fa_lo.do">라운지</a></li>
 							<li><a href="fa_re.do">레스토랑</a></li>
-							<li><a href="fa_fi.do">휘트니스</a></li>
 							<li><a href="fa_sa.do">샤워장</a></li>
 							<li><a href="fa_sw.do">수영장</a></li>
+							<li><a href="fa_fi.do">휘트니스</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -115,11 +116,12 @@ body{
 							id="dropdownMenuButton" data-toggle="dropdown" 
 							aria-haspopup="true" aria-expanded="false">부대시설</button>
 						<div class="dropdown-menu drr" aria-labelledby="dropdownMenuButton" style="min-width: 100%;">
+							<a class="dropdown-item pt-2 pb-3" href="fa_ca.do">카페</a>
 							<a class="dropdown-item pt-2 pb-3" href="fa_lo.do">라운지</a>
 							<a class="dropdown-item pt-3 pb-3" href="fa_re.do">레스토랑</a>
-							<a class="dropdown-item pt-3 pb-3" href="fa_fi.do">휘트니스</a>
 							<a class="dropdown-item pt-3 pb-3" href="fa_sa.do">샤워장</a>
 							<a class="dropdown-item pt-3 pb-2" href="fa_sw.do">수영장</a>
+							<a class="dropdown-item pt-3 pb-3" href="fa_fi.do">휘트니스</a>
 						</div>
 					</div>
 				</div>
