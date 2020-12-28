@@ -4,16 +4,11 @@ Email : s.hyeon.dev@gmail.com
 
 
 🌱skil <br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  : Launage -JAVA, JS, Boot strap
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  * Launage -JAVA, JS, Boot strap <br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  * HTML5, CSS3, JS, JQuery <br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  * Data Base : My SQL <br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  * Etc : 깃허브 <br>
 
-🌱 Web skils <br>
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : HTML5, CSS3, JS, JQuery
-
-🌱Data Base <br>
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : My SQL
-  
-🌱Etc <br>
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : 깃허브
 
 🌱project <br>
 
