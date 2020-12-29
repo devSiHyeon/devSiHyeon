@@ -145,6 +145,7 @@ body{
 	   	 				out.println("<a class='dropdown-item' href='memberList.do'>회원관리</a>");
 	   	 			} else {
 	   	 				out.println("<a class='dropdown-item' href='check.do'>예약확인</a>");
+	   	 				out.println("<a class='dropdown-item' href='member.do'>정보수정</a>");
 	   	 				out.println("<a class='dropdown-item' href='JoinDelete.do'>회원탈퇴</a>");
 	   	 			}
 	   	 		%>
@@ -204,39 +205,43 @@ body{
 		</div>
 	</div>
 </div>
-	<!-- footer -->
+<!-- footer -->
 	<footer class="footer">
 		<div class="footer-above" style="background: #F1E3C4;">
 			<div class="container pt-4">
 				<div class="row">
-					<div class="col-4 mb-5 text-center">
-						<h3 style="font-size: 1.5rem; color: #D45751;">SINNA</h3><br>
-						<h6 style="font-size: 1rem; color: #BB5954;">HOTELS &amp; RESORTS</h6>
+<!-- 					<div class="col-4 mb-5 text-center"> -->
+<!-- 						<img class="hei pl-2 ml-2" src="images/logo1.png" /> -->
+<!-- 					</div> -->
+					<div class="col-6 mt-4 mb-3 text-center">
+						<h3 style="font-family: Lucida Handwriting; font-size: 1.8rem; color: #D45751;">SHINNA</h3>
+						<br>
+						<h6 style="font-family: Lucida Handwriting; font-size: 1rem; color: #BB5954;">호텔 &amp; 리조트&nbsp;┃&nbsp;백화점&nbsp;┃&nbsp;투어&nbsp; </h6>
 					</div>
-					<div class="col-4 mb-5 text-left">
-						<h5 style="color: #BB5954; font-size: 1rem;">
-							<span style="color: #D45751; font-size: 1.1rem;">TEL.</span> 064-123-4567 
-							<span style="color: #D45751; font-size: 1.1rem;">FAX.</span> 064-987-6543
-						</h5><br>
-						<h5 style="color: #BB5954; font-size: 1rem;">
-							<span style="color: #D45751; font-size: 1.1rem;">주소.</span> 제주특별자치도 서귀포시 중문관광로 72번길 75 (우) 63535
-						</h5><br>
-						<h5 style="color: #BB5954; font-size: 1rem;">
-							<span style="color: #D45751; font-size: 1.1rem;">사업자등록번호.</span> 203-81-43363
-						</h5>
-					</div>
-					<div class="col-4 mb-5 text-center">
-						<h3 style="color:#BB5954; font-size: 1rem;">SNS</h3><br>
-						<a href="#"><img src="images/face.jpg" style="width: 30px;"/></a>
-						<a href="#"><img src="images/ins.jpg" style="width: 30px;"/></a>
-						<a href="#"><img src="images/you.jpg" style="width: 30px;"/></a>
+					
+					<div class="col-6 mb-5 text-center">
+						<br>
+						<a href="https://play.google.com/store/apps/details?id=net.shilla.shlapp&hl=ko&gl=US" target="_blank"><img src="images/shin.png" style="width: 70px;" /></a> &nbsp;&nbsp;
+						<a href="https://ko-kr.facebook.com/theshillahotels" target="_blank"><img src="images/face.png" style="width: 70px;" /></a> &nbsp;&nbsp;
+						<a href="https://www.instagram.com/accounts/login/?next=/theshillajeju/%3Fhl%3Dko" target="_blank"><img src="images/ins.png" style="width: 70px;" /></a>&nbsp;&nbsp;&nbsp;
+						<a href="https://www.youtube.com/channel/UC--hsMkZ_kAUx-1A5YMaXTQ" target="_blank"><img src="images/you.png" style="width: 70px;" /></a>&nbsp;&nbsp;&nbsp;
+						<a href="https://twitter.com/theshillain" target="_blank"><img src="images/twi.png" style="width: 70px;" /></a>&nbsp;&nbsp;&nbsp;
+						<a href="https://theshilla.tistory.com" target="_blank"><img src="images/blog.png" 	style="width: 70px;" /></a>
 					</div>
 				</div>
 			</div>
 		</div>	
-		<div class="footer-below pt-2 pb-3" style="background: #332B20;">
-			<div class="container text-center">
-				<div style="color: #9AB1B0; font-size: 1rem;">Copyright &copy; 2020. All rights reserved</div>
+		
+		
+		<div class="footer-below pt-4 pb-5 mx-auto" style="width: 100%; line-height: 18px;">
+			<div class="container">
+				<div class="foot" style="font-weight:bold; color: #C4AE9C; font-size: 0.8rem;">
+					<a href="hotelmap.do">오시는길</a> &nbsp;&nbsp; | &nbsp;&nbsp; <a href="#">개인정보처리방침</a> &nbsp;&nbsp; | &nbsp;&nbsp; <a href="#">이용약관</a> &nbsp;&nbsp; | &nbsp;&nbsp; <a href="#">이메일주소무단수집거부</a> &nbsp;&nbsp; | &nbsp;&nbsp; <a href="#">사이트맵</a> &nbsp;&nbsp; | &nbsp;&nbsp; <a href="#">채용안내</a>
+				</div>
+				<hr/>
+				<div style="font-weight:bold; color: #B3B3B3; font-size: 0.75rem;">(주) 신나 호텔 | 제주특별자치도 서귀포시 중문관광로 72번길 75 (우) 63535 Tel. 064-123-4567 Fax. 064-987-6543</div>
+				<div style="font-weight:bold; color: #B3B3B3; font-size: 0.75rem;">사업자등록번호 203-81-43363 통신판매번호 제 2009-제주-147호 대표이사 박시현</div>
+				<div style="font-weight:bold; color: #B3B3B3; font-size: 0.75rem;">Copyright &copy; 2020 Shinna Hotel. All rights reserved</div>
 			</div>
 		</div>
 	</footer>
