@@ -27,7 +27,7 @@ public class JoinProAction implements Action {
 		member.setMm(Integer.parseInt(request.getParameter("mm")));
 		member.setDd(Integer.parseInt(request.getParameter("dd")));
 		member.setTel_1(request.getParameter("tel_1"));
-		member.setTel_2(Integer.parseInt(request.getParameter("tel_2")));
+		member.setTel_2(request.getParameter("tel_2"));
 		member.setE_mail(request.getParameter("e_mail"));
 		member.setE_mail2(request.getParameter("e_mail2"));
 		member.setGender(request.getParameter("gender"));
