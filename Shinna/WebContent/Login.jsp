@@ -151,6 +151,7 @@ body{
 	   	 				out.println("<a class='dropdown-item' href='memberList.do'>회원관리</a>");
 	   	 			} else {
 	   	 				out.println("<a class='dropdown-item' href='check.do'>예약확인</a>");
+	   	 				out.println("<a class='dropdown-item' href='member.do'>정보수정</a>");
 	   	 				out.println("<a class='dropdown-item' href='JoinDelete.do'>회원탈퇴</a>");
 	   	 			}
 	   	 		%>
