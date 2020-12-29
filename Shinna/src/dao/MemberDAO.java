@@ -72,7 +72,7 @@ public class MemberDAO {
 			pstmt.setInt(8, member.getMm());
 			pstmt.setInt(9, member.getDd());
 			pstmt.setString(10, member.getTel_1());
-			pstmt.setInt(11, member.getTel_2());
+			pstmt.setString(11, member.getTel_2());
 			pstmt.setString(12, member.getE_mail());
 			pstmt.setString(13, member.getE_mail2());
 			pstmt.setString(14, member.getGender());
@@ -111,7 +111,7 @@ public class MemberDAO {
 					mb.setMm(rs.getInt("mm"));
 					mb.setDd(rs.getInt("dd"));
 					mb.setTel_1(rs.getString("tel_1"));
-					mb.setTel_2(rs.getInt("tel_2"));
+					mb.setTel_2(rs.getString("tel_2"));
 					mb.setE_mail(rs.getString("e_mail"));
 					mb.setE_mail2(rs.getString("e_mail2"));
 					mb.setGender(rs.getString("gender"));

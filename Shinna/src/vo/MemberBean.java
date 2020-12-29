@@ -11,7 +11,7 @@ public class MemberBean {
 	private int mm;
 	private int dd;
 	private String tel_1;
-	private int tel_2;
+	private String tel_2;
 	private String e_mail;
 	private String e_mail2;
 	private String gender;
@@ -78,10 +78,10 @@ public class MemberBean {
 	public void setTel_1(String tel_1) {
 		this.tel_1 = tel_1;
 	}
-	public int getTel_2() {
+	public String getTel_2() {
 		return tel_2;
 	}
-	public void setTel_2(int tel_2) {
+	public void setTel_2(String tel_2) {
 		this.tel_2 = tel_2;
 	}
 	public String getE_mail() {
