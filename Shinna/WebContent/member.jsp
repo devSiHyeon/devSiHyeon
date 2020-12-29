@@ -18,7 +18,7 @@ if (session.getAttribute("grade") != null)
 	
 	try{
 		Context init = new InitialContext();
-		DataSource ds = (DataSource) init.lookup("java:comp/env/jdbc/shinna");
+		DataSource ds = (DataSource) init.lookup("java:comp/env/jdbc/e1b_shotel");
 		con = ds.getConnection();
 		
 		pstmt=con.prepareStatement("select * from member where id=?");
