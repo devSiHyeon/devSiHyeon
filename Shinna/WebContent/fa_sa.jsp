@@ -27,7 +27,7 @@ body{
 <body oncontextmenu="return false" ondragstart="return false">
 <!-- nav -->
 	<div class="container pb-5 mb-5 clearfix">
-		<nav class="navbar navbar-expand-sm navbar-light bg-white fixed-top">
+		<nav class="navbar navbar-expand-sm navbar-light fixed-top menuBgAni menuBg" >
 			<a href="index.do"><img class="hei pl-4 ml-4" src="images/logo1.png" /></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse"
 				data-target="#navbarSupportedContent"
@@ -35,36 +35,36 @@ body{
 				aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			<div class="collapse navbar-collapse ani" id="navbarSupportedContent">
+			<div class="collapse navbar-collapse ani" id="navbarSupportedContent" >
 				<ul class="navbar-nav">
-					<li class="menu"><a href="#">신나호텔</a>
+					<li class="menu"><a href="introduce.do">신나호텔</a>
 						<ul class="sub">
-							<li><a href="introduce.do">호텔소개</a></li>
+							<li class="mt-4"><a href="introduce.do">호텔소개</a></li>
 							<li><a href="hotelmap.do">호텔안내</a></li>
 						</ul>
 					</li>
-					<li class="menu"><a href="#">호텔객실</a>
-						<ul class="sub pb-2">
-							<li><a href="standard.do">스탠다드</a></li>
+					<li class="menu"><a href="standard.do">호텔객실</a>
+						<ul class="sub">
+							<li class="mt-4"><a href="standard.do">스탠다드</a></li>
 							<li><a href="suite.do">스위트</a></li>
 							<li><a href="grand.do">그랜드</a></li>
 							<li><a href="event.do">이벤트</a></li>
 							<li><a href="promotion.do">프로모션</a></li>
 						</ul>
 					</li>
-					<li class="menu"><a href="#">고객문의</a>
+					<li class="menu"><a href="reviewList.do">고객문의</a>
 						<ul class="sub">
-							<li><a href="reviewList.do">게시판</a></li>
+							<li class="mt-4"><a href="reviewList.do">게시판</a></li>
 						</ul>
 					</li>
-					<li class="menu"><a href="#">부대시설</a>
+							<li class="menu"><a href="fa_ca.do">부대시설</a>
 						<ul class="sub">
-							<li><a href="fa_lo.do">카페</a></li>
-							<li><a href="fa_lo.do">라운지</a></li>
+							<li class="mt-4"><a href="fa_ca.do">카페</a></li>
+							<li ><a href="fa_lo.do">라운지</a></li>
 							<li><a href="fa_re.do">레스토랑</a></li>
+							<li><a href="fa_fi.do">휘트니스</a></li>
 							<li><a href="fa_sa.do">샤워장</a></li>
 							<li><a href="fa_sw.do">수영장</a></li>
-							<li><a href="fa_fi.do">휘트니스</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -74,7 +74,7 @@ body{
 				<div class="navbar-nav drs">
 					<div class="dropdown mb-4 dr">
 						<button class="btn btn-white dropdown-toggle" type="button"
-							id="dropdownMenuButton" data-toggle="dropdown"
+							id="dropdownMenuButton" data-toggle="dropdown" style="width:100%;"
 							aria-haspopup="true" aria-expanded="false">신나호텔</button>
 						<div class="dropdown-menu drr" aria-labelledby="dropdownMenuButton" style="min-width: 100%;">
 							<a class="dropdown-item pt-2 pb-3" href="introduce.do">호텔소개</a>
@@ -83,7 +83,7 @@ body{
 					</div>
 					<div class="dropdown mb-4 dr">
 						<button class="btn btn-white dropdown-toggle" type="button"
-							id="dropdownMenuButton" data-toggle="dropdown"
+							id="dropdownMenuButton" data-toggle="dropdown" style="width:100%;"
 							aria-haspopup="true" aria-expanded="false">호텔객실</button>
 						<div class="dropdown-menu drr" aria-labelledby="dropdownMenuButton" style="min-width: 100%;">
 							<a class="dropdown-item pt-2 pb-3" href="standard.do">스탠다드</a>
@@ -95,7 +95,7 @@ body{
 					</div>
 					<div class="dropdown mb-4 dr">
 						<button class="btn btn-white dropdown-toggle" type="button"
-							id="dropdownMenuButton" data-toggle="dropdown"
+							id="dropdownMenuButton" data-toggle="dropdown" style="width:100%;"
 							aria-haspopup="true" aria-expanded="false">고객문의</button>
 						<div class="dropdown-menu drr" aria-labelledby="dropdownMenuButton" style="min-width: 100%;">
 							<a class="dropdown-item pt-2 pb-2" href="reviewList.do">게시판</a>
@@ -103,20 +103,20 @@ body{
 					</div>
 					<div class="dropdown mb-2 dr">
 						<button class="btn btn-white dropdown-toggle" type="button"
-							id="dropdownMenuButton" data-toggle="dropdown" 
+							id="dropdownMenuButton" data-toggle="dropdown" style="width:100%;"
 							aria-haspopup="true" aria-expanded="false">부대시설</button>
 						<div class="dropdown-menu drr" aria-labelledby="dropdownMenuButton" style="min-width: 100%;">
 							<a class="dropdown-item pt-2 pb-3" href="fa_ca.do">카페</a>
 							<a class="dropdown-item pt-2 pb-3" href="fa_lo.do">라운지</a>
 							<a class="dropdown-item pt-3 pb-3" href="fa_re.do">레스토랑</a>
+							<a class="dropdown-item pt-3 pb-3" href="fa_fi.do">휘트니스</a>
 							<a class="dropdown-item pt-3 pb-3" href="fa_sa.do">샤워장</a>
 							<a class="dropdown-item pt-3 pb-2" href="fa_sw.do">수영장</a>
-							<a class="dropdown-item pt-3 pb-3" href="fa_fi.do">휘트니스</a>
 						</div>
 					</div>
 				</div>
 			</div>
-									<!-- 로그인 탭 -->
+			<!-- 로그인 탭 -->
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav ml-auto rig">
 				<% 
@@ -138,17 +138,16 @@ body{
 									aria-haspopup="true" aria-expanded="false" style="width:100%; "><img src="images/dia.png" style="width:27px; height:27px;"><%= grade %> <%= id %>님 </button>
 	    					<div class="dropdown-menu langs" aria-labelledby="dropdownMenuButton" style="width: 100%; min-width: 100%;">
 	   	 						<a class="dropdown-item" href="Logout.do">로그아웃</a>
-	   	 		<%
-	   	 			if(session.getAttribute("id").toString().equals("shinna604")) {
-	   	 				out.println("<a class='dropdown-item' href='checkMemberList.do'>예약관리</a>");
-	   	 				out.println("<a class='dropdown-item' href='memberList.do'>회원관리</a>");
-	   	 			} else {
-	   	 				out.println("<a class='dropdown-item' href='check.do'>예약확인</a>");
-	   	 				out.println("<a class='dropdown-item' href='member.do'>정보수정</a>");
-	   	 				out.println("<a class='dropdown-item' href='JoinDelete.do'>회원탈퇴</a>");
-	   	 			}
-	   	 		%>
-	    						
+				   	 		<%
+				   	 			if(session.getAttribute("id").toString().equals("shinna604")) {
+				   	 				out.println("<a class='dropdown-item' href='checkMemberList.do'>예약관리</a>");
+				   	 				out.println("<a class='dropdown-item' href='memberList.do'>회원관리</a>");
+				   	 			} else {
+				   	 				out.println("<a class='dropdown-item' href='check.do'>예약확인</a>");
+				   	 				out.println("<a class='dropdown-item' href='member.do'>개인정보</a>");
+				   	 				out.println("<a class='dropdown-item' href='JoinDelete.do'>회원탈퇴</a>");
+				   	 			}
+				   	 		%>
 	    					</div>
 		    			</div>
 	    			</li>
@@ -254,4 +253,4 @@ body{
 <script	src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
 <script src="js/index.js"></script>
 </body>
-</html>
+</html>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
