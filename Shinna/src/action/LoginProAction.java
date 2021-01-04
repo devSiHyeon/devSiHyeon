@@ -33,7 +33,7 @@ public class LoginProAction implements Action {
 		}else {
 			response.setContentType("text/html;charset=UTF-8");
 			PrintWriter out=response.getWriter();
-			out.println("<script>alert('로그인실패');history.back();</script>");
+			out.println("<script>alert('로그인실패');location.href='./Login.do';</script>");
 		}
 		return forward;
 	}
