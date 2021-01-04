@@ -27,8 +27,8 @@ body{
 }
 .delete {
 	position: relative;
-	width:400px;
-	margin-top:230px;
+	width:600px;
+	margin-top:250px;
 	margin-bottom :350px;
 }
 
@@ -152,11 +152,11 @@ body{
 	   	 						<a class="dropdown-item" href="Logout.do">로그아웃</a>
 				   	 		<%
 				   	 			if(session.getAttribute("id").toString().equals("shinna604")) {
-				   	 				out.println("<a class='dropdown-item' href='checkMemberList.do'>예약관리</a>");
-				   	 				out.println("<a class='dropdown-item' href='memberList.do'>회원관리</a>");
+				   	 				out.println("<a class='dropdown-item' href='ad_CheckMemberList.do'>예약관리</a>");
+				   	 				out.println("<a class='dropdown-item' href='ad_MemberList.do'>회원관리</a>");
 				   	 			} else {
 				   	 				out.println("<a class='dropdown-item' href='check.do'>예약확인</a>");
-				   	 				out.println("<a class='dropdown-item' href='member.do'>개인정보</a>");
+				   	 				out.println("<a class='dropdown-item' href='member.do'>회원정보</a>");
 				   	 				out.println("<a class='dropdown-item' href='JoinDelete.do'>회원탈퇴</a>");
 				   	 			}
 				   	 		%>
@@ -188,7 +188,7 @@ body{
 <!-- Join delete -->
 <div>
 	<div class="delete mx-auto">
-		<span class="text-center" style="font-size:3em;">회원탈퇴</span><br>
+		<span class="text-center" style="font-size:2em;">회원탈퇴</span><br>
 		<hr><br>
 				<div class="card  card-form my-4">
 					<div class="card-body" style="background-color:#F1E3C4">
@@ -197,27 +197,29 @@ body{
 							  <div class="input-group-prepend ">
 							    <span class="input-group-text font-weight-bold" id="basic-addon1" style="width:140px; height:42px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;아이디</span>
 							  </div>
-							  <input type="text" id="id" name="id" class="form-control font-weight-bold"  value=<%= id %> style="height:42px;" aria-label="Username" aria-describedby="basic-addon1">
+							  <input type="text" class="form-control font-weight-bold"  value=<%= id %> name="id" style="height:42px;" aria-label="Username" aria-describedby="basic-addon1">
 							</div>		
 							
 							
 							<div class="input-group mt-4 mb-4">
 							  <div class="input-group-prepend">
-							    <span class="input-group-text text-center font-weight-bold" id="basic-addon1" style="width:140px; height:42px;" >&nbsp;&nbsp;&nbsp;&nbsp;비밀번호</span>
+							    <span class="input-group-text text-center font-weight-bold" id="basic-addon1" style="width:140px; height:42px;">&nbsp;&nbsp;&nbsp;&nbsp;비밀번호</span>
 							  </div>
-							  <input type="password" name="pw" id="pw" class="form-control form-control-lg" style="height:42px;"autofocus="autofocus" />
+							  <input type="password" name="pw" id="pw" class="form-control form-control-lg" style="height:42px;"/>
 							</div>		
-									
-												
-							<div class="text-center mb-4" id="joinbutton"> 
-								<button type="button" class="btn btn-outline-success font-weight-bold mr-2" style="width: 30%;" onClick="location.href='index.do'">취소하기</button>
-								<button type="submit" class="btn btn-outline-success font-weight-bold" style="width: 30%;" onclick="return confirm('탈퇴 시 예약이 자동취소 됩니다. \n계속 삭제를 진행하시겠습니까?')">회원탈퇴</button>
+							
+							<div class="text-center mb-4" > 
+								<button type="button" class="btn btn-outline-success font-weight-bold mr-2" style="width: 20%;" onClick="location.href='index.do'">취소하기</button>
+								<button type="submit" class="btn btn-outline-success font-weight-bold" style="width: 20%;" onclick="return confirm('탈퇴 시 예약이 자동취소 됩니다. \n계속 삭제를 진행하시겠습니까?')">회원탈퇴</button>
 							</div>
 						</form>
 					</div>
 				</div>
 			</div>
 </div>
+
+
+
 
 
 <!-- footer -->
