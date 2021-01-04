@@ -140,11 +140,11 @@ body{
 	   	 						<a class="dropdown-item" href="Logout.do">로그아웃</a>
 				   	 		<%
 				   	 			if(session.getAttribute("id").toString().equals("shinna604")) {
-				   	 				out.println("<a class='dropdown-item' href='checkMemberList.do'>예약관리</a>");
-				   	 				out.println("<a class='dropdown-item' href='memberList.do'>회원관리</a>");
+				   	 				out.println("<a class='dropdown-item' href='ad_CheckList.do'>예약관리</a>");
+				   	 				out.println("<a class='dropdown-item' href='ad_MemberList.do'>회원관리</a>");
 				   	 			} else {
 				   	 				out.println("<a class='dropdown-item' href='check.do'>예약확인</a>");
-				   	 				out.println("<a class='dropdown-item' href='member.do'>개인정보</a>");
+				   	 				out.println("<a class='dropdown-item' href='member.do'>회원정보</a>");
 				   	 				out.println("<a class='dropdown-item' href='JoinDelete.do'>회원탈퇴</a>");
 				   	 			}
 				   	 		%>
