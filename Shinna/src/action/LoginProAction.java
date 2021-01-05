@@ -2,6 +2,7 @@ package action;
 
 import java.io.PrintWriter;
 
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
@@ -20,6 +21,20 @@ public class LoginProAction implements Action {
 		
 		member.setId(request.getParameter("id"));
 		member.setPw(request.getParameter("pw"));
+		String checkbox = request.getParameter("checkbox"); 
+		Cookie cookie =	new Cookie("id", member.getId());
+		Cookie check =	new Cookie("checkbox", checkbox);
+		
+		System.out.println(checkbox);
+		if(checkbox != null ) {
+			response.addCookie(cookie);
+			response.addCookie(check);
+		} else {
+			cookie.setMaxAge(0);
+			response.addCookie(cookie);
+			check.setMaxAge(0);
+			response.addCookie(check);
+		}
 		
 		LoginService LoginService = new LoginService();
 		boolean loginResult = LoginService.login(member);

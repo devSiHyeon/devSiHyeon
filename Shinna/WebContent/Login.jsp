@@ -6,11 +6,27 @@
 	if(session.getAttribute("id") != null) id = (String)session.getAttribute("id");
 	if(session.getAttribute("grade") != null) id = (String)session.getAttribute("grade");   //보류
 %>
+
+<%
+	String cookie = "";
+	String check = null;
+	Cookie[] cookies = request.getCookies(); //쿠키 불러오기
+	if (cookies != null && cookies.length > 0)
+		for(int i=0; i< cookies.length; i++ ) {
+			if(cookies[i].getName().equals("id")) {
+				cookie = cookies[i].getValue();
+			}else if (cookies[i].getName().equals("checkbox")) {
+				check = cookies[i].getValue();
+				
+			}
+		}
+			
+	
+	%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
 <title>SHINNA</title>
 <link href = "images/logo1.png" rel = "icon" type="image/x-icon">
@@ -28,7 +44,21 @@ body{
 	margin-bottom :350px;
 }
 
+button {
+	width:80px;
+}
 
+#toTop {
+	position: fixed;
+	bottom: 15%;
+	right: 2%;
+	z-index: 9999;
+}
+
+.top {
+	width: 40px;
+	height: 40px;
+}	
 	</style>
 </head>
 <body oncontextmenu="return false" ondragstart="return false">
@@ -179,36 +209,53 @@ body{
 	</div>
 	
 	
+
 <!-- login -->
 <div>
 	<div class="login mx-auto">
-<!-- 	<form name ="MemberLogin" action="MemberLoginPro.do" method="post"> -->
 		<span class="text-center" style="font-size:3em;">Login</span><br>
 		<hr><br>
 		이곳은 당신만의 신나호텔입니다.<br><br>
 		<span style="font-size:13px;">가입하신 아이디와 비밀번호를 정확히 입력해주세요</span><br>
 				<div class="card  card-form my-4">
 					<div class="card-body" style="background-color:#F1E3C4">
-						<form name="loginForm" action="LoginPro.do" method="post">
+						<form name="loginForm" id="loginForm" action="LoginPro.do" method="post">
 							<div class="form-group">
-								<input type="text" name="id" class="form-control form-control-lg" required="required" placeholder="아이디" autofocus="autofocus"/>
+								<input type="text" name="id" class="form-control form-control-lg" required="required" placeholder="아이디" autofocus="autofocus" value="<%=cookie %>"/>
 								
 							</div>
 							<div class="form-group">
 								<input type="password" name="pw" class="form-control form-control-lg " required="required"  placeholder="비밀번호" />
 							</div>
+							<div class="ml-3 mb-4" >
+								<input type="checkbox" name="checkbox" 
+									<% if(check != null) {
+										out.println("checked='checked'"); %>
+									<% } else{ 
+										out.println("");%>
+									<% } %>
+								
+								
+								> 아이디 저장
+							</div>
 							<div class="text-center">
-							<button type="submit" class="btn btn-success login-color1">Login</button>
-							<button type="button" class="btn btn-success login-color2 " onClick="location.href='Join.do'">Join</button>
+							<button type="submit" class="btn btn-outline-success login-color1"  onclick="check()">Login</button>
+							<button type="button" class="btn btn-outline-success login-color2 " onClick="location.href='Join.do'">Join</button>
 							</div>
 						</form>
 					</div>
 				</div>
-<!-- 	</form> -->
 			</div>
 </div>
 
 
+<!-- top 버튼 -->
+	<div>
+		<a id="toTop" href="#"><img src="images/top.png" class="top"
+			alt="..."></a>
+	</div>
+	
+	
 
 <!-- footer -->
 	<footer class="footer">
@@ -254,5 +301,6 @@ body{
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
 <script	src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
 <script src="js/index.js"></script>
+<!-- <script src="js/Login.js"></script> -->
 </body>
 </html>
