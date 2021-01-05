@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>si_hyeon</title>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet"	href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+.navbar-brand {
+	font-family: 'Noto Sans KR', sans-serif;
+	color:#006064;  /* 900 색상 */
+}
+
+.body{
+	margin-top:100px;
+}
+
+ul{
+	list-style-type: none;
+}
+
+
+	
+#center{
+	display:flex;
+	align-items:center;
+}	
+
+
+/* .po{ */
+/* 	width:275px; */
+/* 	height:300px; */
+/* } */
+</style>
+</head>
+<body>
+<!-- 상단메뉴 -->
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">ParkSiHyeon</a><br>
+    <button class="navbar-toggler" type="button" data-toggle="collapse"
+			data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false"
+			aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+         	<a class="nav-link" href="#portfolio">자격증 </a>
+        </li>
+        <li class="nav-item">
+			<a class="nav-link" href="#skill">기술</a>
+        </li>
+        <li class="nav-item">
+			<a class="nav-link" href="#project">프로젝트</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container body">
+
+	<div class="mt-5">
+	<!-- 소개 -->
+		<div>
+		<h2 class="mb-4"> Park Si Hyeon </h2>
+			<ul class="ml-2">
+				<li class="mb-4"> 안녕하세요. 신입 백엔드 개발자를 준비하고 있는 박시현 입니다.<br>
+				직업훈련 과정을 통하여 4개월간 수업을 들었으며 현재는 팀원들과 함께 프로젝트 진행 중에 있습니다.
+				</li>
+				<li>
+				s.hyeon.dev@gmail.com <br>
+				<a href="https://github.com/sihyeon01/sihyeon01"  id="portfolio">github</a>
+				</li>
+			</ul>
+		</div>
+	<!-- 자격증 -->
+		<h2 class="mt-5 font-weight-bold">자격증</h2>
+			<ul class="mt-3">
+				<li class="mt-4">컴퓨터활용능력 2급</li>
+				<li class="mt-4">운전면허 2종</li>
+				<li class="mt-4">한글속기 2급</li>
+				<li class="mt-4" id="skill">전산회계 1급</li>
+			</ul>
+	
+	<!-- 기술 -->
+		<h2 class="mt-5 font-weight-bold" >기술</h2>	
+			<div>
+				<ul class="mt-3">
+					<li class="mt-4">Language -JAVA, JS, Boot strap</li>
+					<li class="mt-4">Web skils : HTML5, CSS3, JS, JQuery</li>
+					<li class="mt-4">Data Base  : My SQL</li>
+					<li class="mt-4" id="project">Etc  : 깃허브</li>
+				</ul>
+			</div>
+	</div>
+	
+	<!-- 프로젝트 -->
+	<h2 class="mt-5 font-weight-bold" >프로젝트</h2>	
+	<div class="row ml-5" style="width:90%;">
+	    <div class="col mt-3 mb-5 border" >
+			<ul >
+				<li class="mt-4 text-center"><h4>SHINNA HOTEL</h4><img src="img/logo.png" style="max-width:100%; height:auto;"></li>
+				<li class="mt-4">기간</li> 
+				<li class="ml-4"> : 2020.12.01 ~</li>
+				<li class="mt-4" >설명 </li> 
+				<li class="ml-4"> : 호텔 사이트로서 회원 가입하여 객실을 예약하는 시스템의 홈페이지입니다.</li>
+				<li class="mt-4">활용기술</li> 
+				<li class="ml-4"> : HTML5, CSS3, JS, BootStrap, JSP, JAVA, My SQL</li>
+				<li class="mt-4">디자인 &amp; 개발 </li> 
+				<li class="ml-4" > : 회원가입, 로그인, 부대시설, 홈페이지 로고</li>
+				<li class="ml-4" > : 홈페이지 메인 - 호텔사진, 예약</li>
+				<li class="ml-4" > : 관리자 - 예약확인, 회원관리</li>
+				<li class="mt-4">깃허브 </li> 
+				<li class="ml-4" ><a href="https://github.com/sihyeon01/sihyeon01/tree/main/Shinna"> : Shinna Hotel</a></li>
+			</ul>
+	    </div>	
+	</div>
+
+
+<!-- 세부내용 -->
+	<section class="mb-3 pt-4 pb-5" >
+		<div class="container mt-3" style="max-width: 920px;">
+			<div class="card-deck">
+				<div class= "card">
+					<img class="card-img-top po" src="img/Join.png"/>
+					<div class="card-body">
+						<h4 class="card-title">회원가입</h4>
+						<p class="card-text ml-2" style="text-align: justify">필수사항 안내</p>
+						<p class="card-text ml-2" style="text-align: justify">비밀번호 중복확인</p>
+					</div>
+				</div>
+				<div class= "card">
+					<img class="card-img-top po" src="img/Login.png"/>
+					<div class="card-body">
+						<h4 class="card-title">로그인</h4>
+						<p class="card-text ml-2" style="text-align: justify">아이디 저장</p>
+					</div>
+				</div>
+				<div class= "card">
+					<img class="card-img-top po" src="img/memberInfo.png"/>
+					<div class="card-body">
+						<h4 class="card-title">회원정보</h4>
+						<p class="card-text ml-2" style="text-align: justify">비밀번호 확인 후 회원정보 확인</p>
+					</div>
+				</div>
+			</div>	
+				</div>
+		<div class="container mt-3" style="max-width: 920px;">
+			<div class="card-deck mt-3">
+				<div class= "card">
+					<img class="card-img-top po" src="img/memberDelete.png"/>
+					<div class="card-body">
+						<h4 class="card-title">회원탈퇴</h4>
+						<p class="card-text ml-2" style="text-align: justify">비밀번호 확인 후 탈퇴</p>
+					</div>
+				</div>
+				<div class= "card">
+					<img class="card-img-top po" src="img/adminCheck.png"/>
+					<div class="card-body">
+						<h4 class="card-title">관리자 - 예약확인</h4>
+						<p class="card-text ml-2" style="text-align: justify">예약된 회원 삭제기능</p>
+					</div>
+				</div>
+				<div class= "card">
+					<img class="card-img-top po" src="img/adminMember.png"/>
+					<div class="card-body">
+						<h4 class="card-title">관리자 - 회원확인</h4>
+						<p class="card-text ml-2" style="text-align: justify">회원 강제 탈퇴 기능</p>
+					</div>
+				</div>
+			</div>	
+		</div>	
+	</section>
+	
+</div>	
+
+<footer>
+	<!-- footer -->
+		<div class="footer-above" style="background: #D5D5D5;">
+			<div class="container text-center pt-5 pb-5">
+				<span style="font-weight:bold; font-size: 0.8rem;">ParkSiHyeon</span><br>
+				<span class="ml-3" style="font-size: 0.8rem;"> s.hyeon.dev@gmail.com</span><br>
+				<span class="ml-3" style="font-size: 0.8rem;"><a href="https://github.com/sihyeon01/sihyeon01" style="color:#000000;"><img src="img/git.png" style="width:50px; height:50px;">GitHub : readme</a> </span><br>
+				
+			</div>
+		</div>	
+		
+</footer>
+<!-- Optional JavaScript -->
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script	src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+	<script	src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
+	<script src="JS/custom.js"></script>
+</body>
+</html>
