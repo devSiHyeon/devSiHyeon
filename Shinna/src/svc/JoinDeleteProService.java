@@ -11,14 +11,14 @@ import dao.MemberDAO;
 import vo.MemberBean;
 public class JoinDeleteProService {
 
-	public boolean isDelete( String isdelete,String id) {
+	public boolean isDelete( String pw,String id) {
 		boolean isDelete = false;
 		Connection con = getConnection();
 		MemberDAO memberDAO = MemberDAO.getInstance();
 		memberDAO.setConnection(con);
 		MemberBean member = new MemberBean();
 		member.setId(id);
-		member.setPw(isdelete);
+		member.setPw(pw);
 		String userId = memberDAO.memberInfoId(member);
 		int isDeleteCount = 0;
 		if(userId != null) isDeleteCount = memberDAO.isDelete(id);
