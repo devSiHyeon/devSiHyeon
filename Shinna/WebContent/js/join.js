@@ -22,7 +22,7 @@
 			}
 		});
 		
-		//아이디 공백확인
+		//아이디 공백, 한글 정규식
 		$("#id").blur(function(e){
 			e.preventDefault();
 			if($("#id").val().length == 0) {
@@ -31,20 +31,26 @@
 				$(".error:eq(2)").addClass("d-none");				
 			}		
 		});
+    
+		 
 
 		//아이디 중복검사
 		$("#id").change(function() {
 			$.get("Joinduplicate.jsp", { "id": $(this).val() }, function(data) {
-				var obj = jQuery.parseJSON(data);
+				var obj = jQuery.parseJSON(data); 
+				var idJ = /^[a-z0-9][a-z0-9_\-]{4,19}$/; 
 				console.log(obj[0]);
-				if (obj[0] == true) {
+				if(idJ.test($('#id').val())!=true){
+					$("#LoginCheck").html("<span style='font-size:14px; color: #00B700; font-weight:bold;'>4~12자의 영문, 숫자만 사용 가능합니다.</span>");
+				} else if (obj[0] == true) {
 					$("#LoginCheck").html("<span style='font-size:14px; color: red; font-weight:bold;'>중복된 아이디 입니다.</span>");
-				} else {
+				} else{
 					$("#LoginCheck").html("<span  style='font-size:14px; color: #5853EB; font-weight:bold;'>중복 되지 않은 아이디 입니다.</span>");
 				}
 				
 			});
 		});
+ 
 		
 		//비밀번호 공백확인
 		$("#pw").blur(function(e){

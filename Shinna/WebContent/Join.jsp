@@ -249,7 +249,7 @@ body{
 								<div class="form-group error"></div>
 								
 								<div class="form-group"> 아이디
-									<input type="text" name="id" id="id" class="form-control form-control-lg mt-2" required="required"/>
+									<input type="text" name="id" id="id" class="form-control form-control-lg mt-2" placeholder="영문으로 입력해주세요." required="required"/>
 								</div>
 								
 								<div class="form-group error"></div>
@@ -408,7 +408,7 @@ body{
 								
 						
 								<div class="text-center" id="joinbutton"> 
-									<button type="submit"  id="joinbutton" class="btn btn-success login-color2 form-control mt-3" style="height:48px;" value = "회원가입" onclick='check()' >회원가입</button>
+									<button type="submit"  id="joinbutton" class="btn btn-outline-success font-weight-bold form-control mt-3" style="height:48px;" value = "회원가입" onclick='check()' >회원가입</button>
 								</div>
 							</form>
 						</div>
