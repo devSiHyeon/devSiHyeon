@@ -194,7 +194,8 @@ body{
 			<li class="mb-3">위<span class="ml-4 mr-2"></span>치</li>
 				<li class="mb-3 memo3" style="font-size:13px;">호텔 10F</li>
 			<li class="mb-3">운영시간</li> 
-				<li class="mb-3 memo3" style="font-size:13px;">07:00 ~ 22:00</li>
+				<li class="mb-3 memo3" style="font-size:13px;">open - 07:00</li>
+				<li class="mb-3 memo3" style="font-size:13px;">close - 22:00</li>
 			<li class="mb-3">이용안내</li> 
 				<li class="mb-3 memo3" style="font-size:13px;">회원 및 투숙객만 이용 가능</li>
 			<li class="mb-3">문<span class="ml-4 mr-2"></span>의</li> 

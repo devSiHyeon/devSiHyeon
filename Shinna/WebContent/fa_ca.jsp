@@ -193,8 +193,6 @@ body{
 			<li class="mb-3 ">위<span class="ml-4 mr-2"></span>치</li>
 				<li class="mb-3 memo3" style="font-size:13px;">호텔 1F</li>
 			<li class="mb-3">운영시간</li> 
-				<li class="mb-3 memo3" style="font-size:13px;">09:00 ~ 22:00</li>
-			<li class="mb-3">카<span class="ml-4 mr-2"></span>페</li> 
 				<li class="mb-3 memo3" style="font-size:13px;">open - 09:00</li>
 				<li class="mb-3 memo3" style="font-size:13px;">close - 21:00</li>
 			<li class="mb-3">이용안내</li> 
