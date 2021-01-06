@@ -250,7 +250,7 @@ body{
 	     </tr>
 	     <tr>
 		      <th class="left mb-2 font-weight-bold">전화번호</th>
-				<td class="right">(<%=rs.getString("tel_1") %> )<br><%=rs.getInt("tel_2") %></td>
+				<td class="right">(<%=rs.getString("tel_1") %> )<br><%=rs.getString("tel_2") %></td>
 	     </tr>
 	     <tr>
 		      <th class="left font-weight-bold">이메일</th>
