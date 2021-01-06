@@ -408,7 +408,7 @@ body{
 								
 						
 								<div class="text-center" id="joinbutton"> 
-									<button type="submit"  id="joinbutton" class="btn btn-outline-success font-weight-bold form-control mt-3" style="height:48px;" value = "회원가입" onclick='check()' >회원가입</button>
+									<button type="button"  id="joinbutton" class="btn btn-outline-success font-weight-bold form-control mt-3" style="height:48px;" value = "회원가입" onclick='check()' >회원가입</button>
 								</div>
 							</form>
 						</div>

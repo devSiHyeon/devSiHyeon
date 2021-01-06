@@ -1,6 +1,6 @@
+	var isSubmit = false;
 
 	$(function() {
-
 			//성명(영문-이름) 공백확인
 		$("#L_name").blur(function(e){
 			e.preventDefault();
@@ -35,17 +35,18 @@
 		 
 
 		//아이디 중복검사
-		$("#id").change(function() {
+		$("#id").blur(function() {
 			$.get("Joinduplicate.jsp", { "id": $(this).val() }, function(data) {
 				var obj = jQuery.parseJSON(data); 
-				var idJ = /^[a-z0-9][a-z0-9_\-]{4,19}$/; 
+				var idJ = /^[a-z0-9][a-z0-9_\-]{3,14}$/; 
 				console.log(obj[0]);
 				if(idJ.test($('#id').val())!=true){
-					$("#LoginCheck").html("<span style='font-size:14px; color: #00B700; font-weight:bold;'>4~12자의 영문, 숫자만 사용 가능합니다.</span>");
+					$("#LoginCheck").html("<span style='font-size:14px; color: #00B700; font-weight:bold;'>4~15자의 영문, 숫자만 사용 가능합니다.</span>");
 				} else if (obj[0] == true) {
 					$("#LoginCheck").html("<span style='font-size:14px; color: red; font-weight:bold;'>중복된 아이디 입니다.</span>");
 				} else{
 					$("#LoginCheck").html("<span  style='font-size:14px; color: #5853EB; font-weight:bold;'>중복 되지 않은 아이디 입니다.</span>");
+					isSubmit = true;
 				}
 				
 			});
@@ -112,14 +113,16 @@
 		});
 		
 	});
-	
-	
+	   
 	function check(){
 		theForm = document.joinForm;
 		if(theForm.L_name.value=="" || theForm.name.value=="" || theForm.id.value=="" ||
-		theForm.pw.value=="" || theForm.tel_2.value=="" || theForm.e_mail.value==""  ) {
+		theForm.pw.value=="" || theForm.tel_2.value=="" || theForm.e_mail.value=="" ) {
 			alert("필수 입력란이 비었습니다. 확인해 주세요.");
+			}else if(!isSubmit){
+				alert("아이디를 확인해 주세요.");
 			}else{
 				alert("회원가입을 축하합니다.");
+				theForm.submit();
 			}
 		}
