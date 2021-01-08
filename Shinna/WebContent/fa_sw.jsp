@@ -118,26 +118,37 @@ body{
 					</div>
 				</div>
 			</div>
-			<!-- 로그인 탭 -->
+						
+<!-- 로그인 탭 -->
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav ml-auto rig">
-				<% 
-					if(id == null ) {
-				%>
-					<li class="nav-item" style="width:100%;">
-						<a href="Login.do" class="text-left" style="margin-left: 40px; margin-right: 5px; width:100%; min-width: 100%; margin-top: 13px;">로그인</a>
-					</li>
-					<li class="nav-item" style="width:100%;">
-						<a href="Join.do" class="text-left" style="margin-left: 33px; margin-right: 25px; width:100%; min-width: 100%; margin-top: 13px;">회원가입</a>
-					</li>
-				<% 
-					} else {
-				%>
+					<% 
+						if(id == null ) {
+					%>
+						<li class="nav-item" style="width:100%;">
+							<a href="Login.do" class="text-left" style="margin-left: 40px; margin-right: 5px; width:100%; min-width: 100%; margin-top: 13px;">로그인</a>
+						</li>
+						<li class="nav-item" style="width:100%;">
+							<a href="Join.do" class="text-left" style="margin-left: 33px; margin-right: 25px; width:100%; min-width: 100%; margin-top: 13px;">회원가입</a>
+						</li>
+					<% 
+						} else {
+					%>
 					<li class="nav-item " style="width:100%; ">
-						<div class="dropdown lang">
+					
+					<div class="dropdown lang">
 	    					<button class="text-left btn btn-white dropdown-toggle" type="button"
 									id="dropdownMenuButton" data-toggle="dropdown"
-									aria-haspopup="true" aria-expanded="false" style="width:100%; "><img src="images/dia.png" style="width:27px; height:27px;"><%= grade %> <%= id %>님 </button>
+									aria-haspopup="true" aria-expanded="false" style="width:100%; "><img src="images/dia.png" style="width:27px; height:27px;"><%= grade %>
+									<%
+						   	 			if(session.getAttribute("id").toString().equals("shinna604")) {
+						   	 				out.println("관리자");
+						   	 			} else {
+						   	 		%>
+						   	 			<%= id %>님
+						   	 		<% 	}
+						   	 		%>
+									 </button>
 	    					<div class="dropdown-menu langs" aria-labelledby="dropdownMenuButton" style="width: 100%; min-width: 100%;">
 	   	 						<a class="dropdown-item" href="Logout.do">로그아웃</a>
 				   	 		<%
@@ -172,7 +183,7 @@ body{
 			</div>
 		</nav>
 	</div>
-	
+
 	
 	
 <!-- swimming pool -->
