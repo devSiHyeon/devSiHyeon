@@ -58,6 +58,7 @@ import action.ReviewModifyFormAction;
 import action.ReviewModifyProAction;
 import action.ReviewReplyFormAction;
 import action.ReviewReplyProAction;
+import action.ReviewWriteFormAction;
 import action.ReviewWriteProAction;
 import action.StandardAction;
 import action.SuiteAction;
@@ -416,9 +417,12 @@ public class FrontController extends HttpServlet {
 				e.printStackTrace();
 			}
 		} else if(command.equals("/reviewWriteForm.do")) {
-			forward = new ActionForward();
-			forward.setPath("review_write.jsp");
-			
+			action = new ReviewWriteFormAction();
+			try {
+				forward = action.execute(request, response);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
 		} else if(command.equals("/reviewWritePro.do")) {
 			action = new ReviewWriteProAction();
 			try {
