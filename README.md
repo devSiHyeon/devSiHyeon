@@ -10,9 +10,9 @@
 <!-- Line -->
 
 🌱 Project <br>
-|Project|nbsp;|
+|Project||
 |:--:|:--|
-|SHINA HOTEL|기간<br>nbsp;nbsp;nbsp;: 2020.12.01 ~ 2021.01.15<br><br>팀원<br>nbsp;nbsp;nbsp;: 3명<br><br>개발 플랫폼<br>nbsp;nbsp;nbsp;: Eclipse, Tomcat, My- SQL<br><br>사용언어<br>nbsp;nbsp;nbsp;: HTML5, CSS3, JS, JSP, JAVA, BootStrap<br><br>설명<br>nbsp;nbsp;nbsp;: 회원제로 운영되는 호텔 예약 홈페이지<br><br>사이트<br>nbsp;nbsp;nbsp;: http://embed.swq.co.kr/shinna/<br><br>
+|SHINA HOTEL|기간<br>nbsp;nbsp;nbsp;: 2020.12.01 ~ 2021.01.15<br><br>팀원<br>>: 3명<br><br>개발 플랫폼<br>>: Eclipse, Tomcat, My- SQL<br><br>사용언어<br>nbsp;nbsp;nbsp;: HTML5, CSS3, JS, JSP, JAVA, BootStrap<br><br>설명<br>nbsp;nbsp;nbsp;: 회원제로 운영되는 호텔 예약 홈페이지<br><br>사이트<br>nbsp;nbsp;nbsp;: http://embed.swq.co.kr/shinna/<br><br>
 
     
 <!--
