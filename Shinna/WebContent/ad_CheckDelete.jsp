@@ -4,6 +4,7 @@
 <%@ page import="java.sql.*"%>
 <%@ page import="javax.sql.*"%>
 <%@ page import="javax.naming.*"%>
+<%@ page import="static db.JdbcUtil.*" %>
 <%
 	String id = null;
 
@@ -22,7 +23,7 @@ try {
 
 	Context init = new InitialContext();
 	DataSource ds = (DataSource) init.lookup("java:comp/env/jdbc/e1b_shotel");
-	con = ds.getConnection();
+	con = getConnection();
 	pstmt = con.prepareStatement("delete from reservation where id =?");
 	pstmt.setString(1, delete_id);
 	pstmt.executeUpdate();
