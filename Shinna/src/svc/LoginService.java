@@ -7,16 +7,21 @@ import static db.JdbcUtil.*;
 public class LoginService {
 
 	public boolean login(MemberBean member) {
-		
-		Connection con = getConnection();
-		MemberDAO memberDAO = MemberDAO.getInstance();
-		memberDAO.setConnection(con);
 		boolean loginResult = false;
-		String loginId=memberDAO.selectLoginId(member);
-		if(loginId !=null) {
-			loginResult = true;
+		Connection con = null;
+		try {
+			con = getConnection();
+			MemberDAO memberDAO = MemberDAO.getInstance();
+			memberDAO.setConnection(con);
+			String loginId=memberDAO.selectLoginId(member);
+			if(loginId !=null) {
+				loginResult = true;
+			}
+		} catch(Exception e) {
+			e.printStackTrace();
+		} finally {
+			if(con != null) close(con);
 		}
-		close(con);
 		return loginResult;
 	}
 

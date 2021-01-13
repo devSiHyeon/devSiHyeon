@@ -48,7 +48,7 @@ public class LoginProAction implements Action {
 		}else {
 			response.setContentType("text/html;charset=UTF-8");
 			PrintWriter out=response.getWriter();
-			out.println("<script>alert('아이디와 비밀번호를 확인해주세요.');location.href='./Login.do';</script>");
+			out.println("<script>alert('로그인실패');location.href='./Login.do';</script>");
 		}
 		return forward;
 	}
