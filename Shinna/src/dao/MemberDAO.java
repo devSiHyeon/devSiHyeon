@@ -1,6 +1,6 @@
 package dao;
 
-import static db.JdbcUtil.close;
+import static db.JdbcUtil.*;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -34,7 +34,6 @@ public class MemberDAO {
 		return instance;
 	}
 
-// 로그인
 	public String selectLoginId(MemberBean member) {
 		String loginId = null;
 		String sql = "select id from member where id=? and pw=?";
@@ -55,82 +54,6 @@ public class MemberDAO {
 		}
 		return loginId;
 	}
-	
-
-	//개인정보수정
-		public String selectInfo(MemberBean member) {
-			String info = null;
-			String sql = "select id from member where id=? and pw=?";
-			try {
-				pstmt = con.prepareStatement(sql);
-				pstmt.setString(1, member.getId());
-				pstmt.setString(2, member.getPw());
-				rs = pstmt.executeQuery();
-				
-				if(rs.next()) {
-					info = member.getId();
-				}
-			}catch(SQLException e) {
-				System.out.println("비밀번호 에러: " + e);
-			}finally {
-				if(rs != null) close(rs);
-				if(pstmt !=null) close(pstmt);
-			}
-			return info;
-		}
-		
-//		 회원탈퇴 아이디 확인
-			public boolean isDelete(String id, String pw) {
-				
-				PreparedStatement pstmt = null;
-				ResultSet rs = null;
-				String member_sqll = "select * from member where id=?";
-				boolean isId = false;
-				
-				try {
-					pstmt = con.prepareStatement(member_sqll);
-					pstmt.setString(1, id);
-					rs = pstmt.executeQuery();
-					rs.next();
-					
-					if(pw.equals(rs.getString("pw"))) {
-						isId = true;
-					}
-				}catch(Exception ex) {
-					System.out.println("isDeleteId 에러 : " + ex);
-				}finally {
-					close(pstmt);
-				}
-				return isId;
-			}
-
-		//회원탈퇴
-		public int isDelete(String id) {
-			PreparedStatement pstmt = null;
-			String member_sql = "delete from member where id=?";
-//			String reservation_sql = "delete from reservation where id=?";
-			int deleteCount = 0;
-			
-			try {
-				pstmt = con.prepareStatement(member_sql);
-				pstmt.setString(1, id);
-				deleteCount = pstmt.executeUpdate();
-				System.out.println("비밀번호 삭제");
-				
-//				pstmt = con.prepareStatement(reservation_sql);
-//				pstmt.setString(1, id);
-//				DeleteCount = pstmt.executeUpdate();
-			} catch(Exception e) {
-				System.out.println("isDelete 에러: " + e);
-			} finally {
-				close(pstmt);
-			}
-			return deleteCount;
-		}	
-		
-
-
-		
 		
 	public int insertMember(MemberBean member) {
 		
@@ -209,32 +132,78 @@ public class MemberDAO {
 	}
 
 	
-//	public boolean checkId(String id) {
-//		PreparedStatement pstmt = null;
-//		ResultSet rs = null;
-//		try {
-//			pstmt = con.prepareStatement("select * from member where id = ?");
-//			pstmt.setString(1, id);
-//			rs = pstmt.executeQuery();
-//			if(rs.next()) {
-//				return true;
-//			}
-//		} catch (Exception e) {
-//			e.printStackTrace();
-//		} finally {
-//			try {
-//				if (rs != null)
-//					close(rs);
-//				if (pstmt != null)
-//					close(pstmt);
-//			} catch (Exception e) {
-//				e.printStackTrace();
-//			}
-//		}
-//		return false;
-//		
-//	}
+	
+	public boolean checkId(String id) {
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		try {
+			pstmt = con.prepareStatement("select * from member where id = ?");
+			pstmt.setString(1, id);
+			rs = pstmt.executeQuery();
+			if(rs.next()) {
+				return true;
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				if (rs != null)
+					close(rs);
+				if (pstmt != null)
+					close(pstmt);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+		return false;
+		
+	}
+//개인정보 확인
+		public String memberInfoId(MemberBean member) {
+				String infoId = null;
+				String sql = "select id from member where id=? and pw=?";
+				try {
+					pstmt = con.prepareStatement(sql);
+					pstmt.setString(1, member.getId());
+					pstmt.setString(2, member.getPw());
+					rs = pstmt.executeQuery();
+					
+					if(rs.next()) {
+						infoId = member.getId();
+					}
+				}catch(SQLException e) {
+					System.out.println("비밀번호 에러: " + e);
+				}finally {
+					if(rs != null) close(rs);
+					if(pstmt !=null) close(pstmt);
+				}
+				return infoId;
+			}
+		
+		
 
+//회원탈퇴
+	public int isDelete(String id) {
+		PreparedStatement pstmt = null;
+		String member_sql = "delete from member where id=?";
+		String reservation_sql = "delete from reservation where id=?";
+		int isDeleteCount = 0;
+		
+		try {
+			pstmt = con.prepareStatement(member_sql);
+			pstmt.setString(1, id);
+			isDeleteCount = pstmt.executeUpdate();
+			close(pstmt);
+			pstmt = con.prepareStatement(reservation_sql);
+			pstmt.setString(1, id);
+			pstmt.executeUpdate();
+		} catch(Exception e) {
+			System.out.println("isDelete 에러: " + e);
+		} finally {
+			close(pstmt);
+		}
+		return isDeleteCount;
+	}
 
 	
 
