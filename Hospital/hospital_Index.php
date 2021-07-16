@@ -3,20 +3,9 @@
 
 <head>
     <style>
-    /* 상단 */
-        /* .box1{
-            width:150px;
-            height:40px;
-            background-color:#D3D3D3;
-        }
-        .box2{
-            width:200px;
-            background-color:#D3D3D3;
-        } */
-
         .border{
-            width:350px;
-            margin:auto,0;
+            min-width:350px;
+            margin-left:20px;
         }
     </style>
 </head>
@@ -52,47 +41,61 @@
 <!-- 진료시간 -->
 <div class="mt-5 mb-5">
     <div class="mx-auto" style="width:70%;">
-        <h5 class="mb-3"><span class="material-icons">library_add_check</span> 진료시간</h5>
-        <div class="mb-5 text-center text-center" >
-            <div class=" mb-3 border border-1 border-secondary rounded-pill">
-                <span class="fs-6">평&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;일</span>
-                <span>&nbsp;&nbsp;&nbsp;&nbsp;오전 09:00 ~ 오후 18:00</span></br>
+        <div class="row">
+            <div class="col-lg-6">
+                <h5 class="mb-3"><span class="material-icons">library_add_check</span> 진료시간</h5>
+                <div class="mb-5 text-center w-70 mx-auto" >
+                    <div class=" mb-3 border border-1 rounded-3">
+                        <spa>평&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;일</spa>
+                        <span>&nbsp;&nbsp;&nbsp;&nbsp;오전 09:00 ~ 오후 18:00</span></br>
+                    </div>
+                    <div class="mb-3 border border-1 rounded-3">
+                        <spa>토&nbsp;요&nbsp;일</spa>
+                        <span>&nbsp;&nbsp;&nbsp;&nbsp;오전 09:00 ~ 오후 13:00</span>
+                    </div>    
+                    <div class="mb-3 border border-1 rounded-3">
+                        <spa>점심시간</spa>
+                        <span>&nbsp;&nbsp;&nbsp;오후 13:30 ~ 오후 14:30</span>
+                    </div>
+                    <div class="mb-3 border border-1 rounded-3">
+                        <spa>일요일 · 공휴일 휴진</spa>
+                    </div>        
+                </div>
             </div>
-            <div class="mb-3 border border-1 border-secondary rounded-pill">
-                <span class="fs-6">토&nbsp;요&nbsp;일</span>
-                <span>&nbsp;&nbsp;&nbsp;&nbsp;오전 09:00 ~ 오후 13:00</span>
-            </div>    
-            <div class="mb-3 border border-1 border-secondary rounded-pill">
-                <span class="fs-6">점심시간</span>
-                <span>&nbsp;&nbsp;&nbsp;오후 13:30 ~ 오후 14:30</span>
+            <div class="col-lg-6">
+                <h5 class="mb-3"><span class="material-icons">library_add_check</span> 공지사항</h5>
+                <div class="mb-5 w-70 mx-auto">
+                    <div class=" mb-3 border border-1 rounded-3" style="height:152px; padding-left:10px; padding-top:10px;">
+                        <spa>2021-07-16&nbsp;&nbsp;21년 07 휴무 안내입니다.</spa><br>
+                        <span>2021-04-20&nbsp;&nbsp;21년 05월 01일 오픈했습니다.</span>
+                    </div>
+                </div>
             </div>
-            <div class="mb-3 border border-1 border-secondary rounded-pill">
-                <span class="fs-6">일요일 · 공휴일 휴진</span>
-            </div>        
         </div>
 
         <!-- 오시는길 -->
         <h5 class="mb-3"><span class="material-icons">library_add_check</span> 오시는 길</h5>
-        <div style="width:60%; padding-left:80px;">
-            <div>
-                <!-- 1. 지도 노드 -->
-                    <div id="daumRoughmapContainer1617352618388" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+        <div class="w-100">
+            <div class="mx-auto w-50">
+                <!-- * 카카오맵 - 지도퍼가기 -->
+                    <!-- 1. 지도 노드 -->
+                    <div id="daumRoughmapContainer1626397843538" class="root_daum_roughmap root_daum_roughmap_landing"></div>
 
-                <!--
-                2. 설치 스크립트
-                * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
-                -->
+                    <!--
+                        2. 설치 스크립트
+                        * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+                    -->
                     <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
 
-                <!-- 3. 실행 스크립트 -->
-                <script charset="UTF-8">
-                    new daum.roughmap.Lander({
-                        "timestamp" : "1617352618388",
-                        "key" : "256gw",
-                        "mapWidth" : "50%",
-                        "mapHeight" : "360"
-                    }).render();
-                </script>
+                    <!-- 3. 실행 스크립트 -->
+                    <script charset="UTF-8">
+                        new daum.roughmap.Lander({
+                            "timestamp" : "1626397843538",
+                            "key" : "26n8x",
+                            "mapWidth" : "400",
+                            "mapHeight" : "360"
+                        }).render();
+                    </script>
             </div>
         </div>
     </div>
