@@ -1,5 +1,6 @@
 <? include './auth.php'; ?>
 <? include "DB.php"; ?>
+<? include './Header_2.php';?>
 
 <?php
 if (!$_SESSION['user_id']) { // 로그인이 안된 상태

@@ -1,5 +1,6 @@
 <? include './auth.php'; ?>
 <? include "DB.php"; ?>
+<? include './Header_2.php';?>
 
 <?php
 
