@@ -2,6 +2,8 @@
 
 <? include './DB.php';?>
 
+<? include './Header_2.php';?>
+
 <?php
 
 // 넘어온 값 정리
@@ -34,7 +36,7 @@ if ($row['id']) { // 로그인 성공
 
 } else { // 불일치 안내문구
 
-        msgAndGo("로그인 실패", "./Login.php?user_id={$user_id}");
+        msgAndGo("로그인 실패", "./Login.php");
 };
 
 ?>
