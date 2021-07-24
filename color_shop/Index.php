@@ -5,31 +5,18 @@
     .img_banner {
         width:90%;
         height:500px;
-
     }
 
     .img_a{
         width:200px;
         height:250px;
     }
-    .footer {
-
-        position: position;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        padding: 15px 0;
-        text-align: center;
-        color: white;
-        background: #f8b195;
-
-    }
   </style>
 </head>
 
 <body>
 <!-- 배너 이미지 -->
-<div id="carouselExampleIndicators" class="carousel slide mx-auto img_banner " data-bs-ride="carousel" >
+<div id="carouselExampleIndicators" class="carousel slide mx-auto img_banner " data-bs-ride="carousel" style="width:100%; hight:auto;">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
