@@ -68,7 +68,7 @@
 
                     $result = mysqli_query($db, $sql);
                     
-                    $total = mysqli_num_rows($result); // 전체 갯수 반환해줍니다.
+                    $total = mysqli_num_rows($result); // 전체 갯수 반환
                     
                     while($row = mysqli_fetch_array($result)){
                         
