@@ -44,7 +44,7 @@
                         WHERE idx = '$idx'
                         ";
             $result_read = mysqli_query ($db, $sql_read);
-            $row = mysqli_fetch_array($result_read); // 여기는 한개의 자료만 표시되니까, while 사용할 필요가 없습니다.
+            $row = mysqli_fetch_array($result_read); // 여기는 한개의 자료만 표시되니까, while 사용할 필요가 없음 .
 
             ?>
             <tr>
