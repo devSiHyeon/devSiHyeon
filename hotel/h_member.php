@@ -11,10 +11,10 @@
     } 
 
     // 총 페이지 수 
-    $sql_t      = 'SELECT count(name) FROM h_detail';
+    $sql_t      = 'SELECT count(name) as name FROM h_detail';
     $result_t   = mysqli_query($DB, $sql_t);
     $row_t      = mysqli_fetch_assoc($result_t);
-    $total_row  = $row_t['count(name)'];
+    $total_row  = $row_t['name'];
     $page_list  = 5;
 
     $page_total = ceil($total_row / $page_list);
@@ -28,7 +28,8 @@
     
     if(strlen($user_id) > 0 && $user_id == 'admin'){
         ?>
-    <b>회원 목록</b>  <a href="./Index.php" style="margin-left:200px;">메인화면</a>
+    
+    <b>회원 목록</b>  
     <table border='1'>            
         <thead>
             <th>아이디</th>
